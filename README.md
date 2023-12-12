@@ -17,6 +17,7 @@
   * Type: For example
     * Input: The database contains 165 single light source images of 15 subjects. One for each of the following facial expressions or configurations: center-light, w/glasses, happy, left-light, w/no glasses, normal, right-light, sad, sleepy, surprised, and wink.      
   * Size: The total size of the compressed dataset is about 12mb 
+![](yaleSamples2.gif)
 
 #### Preprocessing / Clean up
 
