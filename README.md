@@ -21,7 +21,8 @@
 
 #### Preprocessing / Clean up
 
-* Describe any manipulations you performed to the data.
+* For this dataset I needed to transform the image into a numpy array of pixel values and make sure to grayscale the image.
+* I also decided to use a package called MTCNN (Multi-Task Cascaded Convolutional Neural Networks) which detects faces and facial landmarks on images.
 
 #### Data Visualization
 
@@ -35,14 +36,6 @@ Show a few visualization of the data and say a few words about what you see.
     * Describe the different models you tried and why.
   * Loss, Optimizer, other Hyperparameters.
 
-### Training
-
-* Describe the training:
-  * How you trained: software and hardware.
-  * How did training take.
-  * Training curves (loss vs epoch for test/train).
-  * How did you decide to stop training.
-  * Any difficulties? How did you resolve them?
 
 ### Performance Comparison
 
