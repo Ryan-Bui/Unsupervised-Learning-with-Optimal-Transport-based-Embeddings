@@ -50,11 +50,16 @@
       * Diffusion Maps
       * Variations of Wassmap
 
-  * Each embedding has its own parameters that we will need to tune and we will experimetn with different parameter setting to try and get the best clustering performance.
+  * Each embedding has its own parameters that we will need to tune and we will experiment with different parameter setting to try and get the best clustering performance.
 * Yale Face Dataset Embeddings:
 ![](isomap.png)
 ![](mds.png)
 ![](tsne.png)
+
+* Newsgroup Embeddings:
+![](newsLLE.png)
+![](newstsne.png)
+
 
 ### Performance Comparison
 
@@ -63,8 +68,11 @@
    * Accuracy
    * F1 Score
    * Adjusted Rand Index (ARI)
-* Show/compare results in one table.
-* Show one (or few) visualization(s) of results, for example ROC curves.
+     
+* Here is an example of what the scores look like for 2 components with isomap embedding:
+![](isomap-kmeans.png)
+
+* Here are some graphs looking at the performance for different component values:
 
 ### Conclusions
 
