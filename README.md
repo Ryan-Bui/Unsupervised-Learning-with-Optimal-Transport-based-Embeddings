@@ -29,12 +29,13 @@
 
 * For the Yale Face Dataset I needed to transform the image into a numpy array of pixel values and make sure to grayscale the image.
 * I also decided to use a package called MTCNN (Multi-Task Cascaded Convolutional Neural Networks) which detects faces and facial landmarks on images.
+* For the Newsgroup dataset I turned the original data file into a pandas data frame where each row represented a document and each column represents a word in the document and the value in the column represents how many time the word appears in that particular document.
 
 
 #### Data Visualization
 
 ![](yaleimages.png)
-
+![](newsgroupdist.png)
 ### Problem Formulation
 
 * Define:
@@ -50,8 +51,10 @@
       * Variations of Wassmap
 
   * Each embedding has its own parameters that we will need to tune and we will experimetn with different parameter setting to try and get the best clustering performance.
-
-
+* Yale Face Dataset Embeddings:
+![](isomap.png)
+![](mds.png)
+![](tsne.png)
 
 ### Performance Comparison
 
@@ -74,8 +77,8 @@
 
 ### Data
 
-* Point to where they can download the data.
-* Lead them through preprocessing steps, if necessary.
+* http://qwone.com/~jason/20Newsgroups/
+* https://www.kaggle.com/datasets/olgabelitskaya/yale-face-database
 
 
 
