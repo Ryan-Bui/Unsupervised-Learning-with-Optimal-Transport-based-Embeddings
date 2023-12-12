@@ -14,9 +14,8 @@
 ### Data
 
 * Data: Yale Face Dataset 
-  * Type: For example
-    * Input: The database contains 165 single light source images of 15 subjects. One for each of the following facial expressions or configurations: center-light, w/glasses, happy, left-light, w/no glasses, normal, right-light, sad, sleepy, surprised, and wink.      
-  * Size: The total size of the compressed dataset is about 12mb 
+  * Type: The database contains 165 single light source images of 15 subjects. One for each of the following facial expressions or configurations: center-light, w/glasses, happy, left-light, w/no glasses, normal, right-light, sad, sleepy, surprised, and wink.     
+  * Size: The total size of the compressed dataset is about 12mb. Each Image is 320x243.
 ![](yaleSamples2.gif)
 
 #### Preprocessing / Clean up
@@ -26,20 +25,33 @@
 
 #### Data Visualization
 
-Show a few visualization of the data and say a few words about what you see.
+![](yaleimages.png)
 
 ### Problem Formulation
 
 * Define:
-  * Input / Output
-  * Models
-    * Describe the different models you tried and why.
-  * Loss, Optimizer, other Hyperparameters.
+  * After pre-processing the images each image will be of size 224x224 and these will be our inputs. Our output will be an embedding
+  * Embeddings:
+    * As of right now there will be 7 methods that I will test out which are:
+      * MDS(multidimensional scaling)
+      * Isomap
+      * Locally Linear Embedding (LLE)
+      * t-distributed Stochastic Neighbor Embedding (t-SNE)
+      * LTSA (Local tangent space alignment)
+      * Diffusion Maps
+      * Variations of Wassmap
+
+  * Each embedding has its own parameters that we will need to tune and we will experimetn with different parameter setting to try and get the best clustering performance.
+
 
 
 ### Performance Comparison
 
-* Clearly define the key performance metric(s).
+* We will have multiple performance metrics which include:
+   * Normalized Mutual Information (NMI)
+   * Accuracy
+   * F1 Score
+   * Adjusted Rand Index (ARI)
 * Show/compare results in one table.
 * Show one (or few) visualization(s) of results, for example ROC curves.
 
