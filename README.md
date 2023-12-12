@@ -60,6 +60,8 @@
 ![](newsLLE.png)
 ![](newstsne.png)
 
+* Wassmap Embedding for Yale Dataset:
+![](wassmap.png)
 
 ### Performance Comparison
 
@@ -73,15 +75,21 @@
 ![](isomap-kmeans.png)
 
 * Here are some graphs looking at the performance for different component values:
+![](ACC.png)
+![](NMI.png)
 
 ### Conclusions
 
-* State any conclusions you can infer from your work. Example: LSTM work better than GRU.
+* Looking at the graphs many of the scores had a spike around 4 however many of them do continue trending upward so perhaps doing it with higher and higher components could lead to a higher accuracy.
+* While doing the Wassmap embedding I had to downsample my images down to 64x64 because when I was running my code I did not have enough RAM to run the code with the images being 224x224 and also I had to only take a sample of 30 images otherwise the code would take too long to run.
+  
 
 ### Future Work
 
-* What would be the next thing that you would try.
-* What are some other studies that can be done starting from here.
+* I plan to some work on this code in order to make it run more efficiently in the future and I also plan to get more performance metrics for the different types of embeddings.
+* I also plan to do more data exploration into the different types of embeddings and see what they might be clustering.
+* I would like to run my code on a more powerful machine in order to be able to handle my images at a higher resolution
+* In the future I plan to do this process on 1 more dataset.
 
 ### Data
 
