@@ -62,6 +62,7 @@
 
 * Optimizing Embeddings:
 I wanted to get the best representation out of each manifold learning technique and in order to do this I needed to tune the hyperparameters so that I could get the best performance possible. I did this by running each embedding 20 times at a different number of components and I then averaged the scores and plotted them to visualize which hyperparameter values had the highest performance.
+
 ![](mdsgraph.png)
 ![](isomapgraph.png)
 ![](diffgraph.png)
