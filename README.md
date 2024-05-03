@@ -80,16 +80,12 @@
 
 ### Conclusions
 
-* Looking at the graphs many of the scores had a spike around 4 however many of them do continue trending upward so perhaps doing it with higher and higher components could lead to a higher accuracy.
-* While doing the Wassmap embedding I had to downsample my images down to 64x64 because when I was running my code I did not have enough RAM to run the code with the images being 224x224 and also I had to only take a sample of 30 images otherwise the code would take too long to run.
+According to the results we have right now Wassmap based embeddings are performing significantly worse compared to their euclidean counterparts and the runtime and computational cost is much higher than other methods. If I had to make a decision right now as to whether or not optimal transport based embeddings provide more value than euclidean ones I would say no. However there is still more to be done and my code is far from perfect. There could be many reasons as to why their performance scores are so low and I will need to investigate further
   
 
 ### Future Work
 
-* I plan to some work on this code in order to make it run more efficiently in the future and I also plan to get more performance metrics for the different types of embeddings.
-* I also plan to do more data exploration into the different types of embeddings and see what they might be clustering.
-* I would like to run my code on a more powerful machine in order to be able to handle my images at a higher resolution
-* In the future I plan to do this process on 1 more dataset.
+I would like to see if I can get the performance of Wassmap to be a bit higher on one of the embeddings. I would like to solve the memory issue so that we can run Wassmap on the full resolution and on the full dataset. Solving the memory issue would also allow us to use this technique on a wider array of datasets such as the Newsgroup dataset as I was not able to get a table of results for that particular dataset.
 
 ### Data
 
