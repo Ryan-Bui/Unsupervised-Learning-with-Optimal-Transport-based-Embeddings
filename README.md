@@ -60,7 +60,7 @@
 ![](newsLLE.png)
 ![](newstsne.png)
 
-* Optimizing Embeddings:
+### Optimizing Embeddings:
 I wanted to get the best representation out of each manifold learning technique and in order to do this I needed to tune the hyperparameters so that I could get the best performance possible. I did this by running each embedding 20 times at a different number of components and I then averaged the scores and plotted them to visualize which hyperparameter values had the highest performance.
 
 ![](mdsgraph.png)
@@ -80,7 +80,7 @@ I wanted to get the best representation out of each manifold learning technique 
 * This a table of the performance metrics on the Yale dataset when the images are downsized to 128x128
 ![](resultstable.png)
 
-* Challenges
+### Challenges
 One of the main flaws of using Wasserstein distance is that computing it is very computationally expensive. It takes up hundreds of gigabytes of memory and the runtime can take hours to days depending on your dataset. This is because when computing the Wasserstein distance matrix it needs to hold the distance matrix itself in memory which is NxN where N is the number of images but also the cost matrix which is M2xM2 where M is the dimension of the image. For example if my images are 32x32 then it would have a distance matrix which is 165x165 and the cost matrix which is 1024x1024 held in memory. Due to this issue I was not able to use the full resolution of the image which could result in loss of important information about the image. The table that you see above comes from creating a Wasserstein distance matrix from the full 165 images but only at 128x128 resolution.
 
 ### Conclusions
