@@ -51,16 +51,16 @@
       * Variations of Wassmap
 
   * Each embedding has its own parameters that we will need to tune and we will experiment with different parameter setting to try and get the best clustering performance.
-* Yale Face Dataset Embeddings:
+* Yale Face Dataset Embeddings
 ![](isomap.png)
 ![](mds.png)
 ![](tsne.png)
 
-* Newsgroup Embeddings:
+* Newsgroup Embeddings
 ![](newsLLE.png)
 ![](newstsne.png)
 
-### Optimizing Embeddings:
+### Optimizing Embeddings
 I wanted to get the best representation out of each manifold learning technique and in order to do this I needed to tune the hyperparameters so that I could get the best performance possible. I did this by running each embedding 20 times at a different number of components and I then averaged the scores and plotted them to visualize which hyperparameter values had the highest performance.
 
 ![](mdsgraph.png)
